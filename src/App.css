@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+body{
+  font-family: "Karla", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.header{
+background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%); 
+display: flex;
+white-space: pre-wrap;
+color: white;
+height: 65px;
+align-items: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header--left{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.header--left > p{
+  font-size: 18px;
+}
+.header--right{
+  margin-right:25px;
+  margin-left: auto;
+}
+.header--logo{
+  margin-left: 25px;
+  width: 35px;
+  height: 35px;
+  align-self: center;
+  padding-right: 10px;
+}
+
+.meme{
+  padding: 36px;
+}
+
+.meme--form{
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  
+}
+
+.form--input{
+  text-indent: 8px;
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+}
+.meme--button{
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%); 
+  border: 0;
   color: white;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.meme--img{
+  grid-column: 1 / -1;
+  height: 270px;
+  align-items: center;
+  display: flex;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

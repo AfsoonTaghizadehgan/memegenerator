@@ -10,6 +10,7 @@ white-space: pre-wrap;
 color: white;
 height: 65px;
 align-items: center;
+width: 100%;
 
 }
 
@@ -68,10 +69,39 @@ align-items: center;
 .meme--img{
   grid-column: 1 / -1;
   border-radius: 5px;
+  margin-top: -30px;
+  width: 100%;
 }
 
-.img--top{
-  margin-bottom: -40px;
+.top{
+  margin-bottom: -50px;
   text-align: center;
   z-index: 1;
+}
+
+.bottom{
+  margin-top: -90px;
+  text-align: center;
+  z-index: 1;
+  color: #D5D4D8;
+}
+
+.img--text{
+    color: white;
+    font-size: 2em;
+    font-family: Impact, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow:
+          2px 2px 0 #000,
+          -2px -2px 0 #000,
+          2px -2px 0 #000,
+          -2px 2px 0 #000,
+          0 2px 0 #000,
+          2px 0 0 #000,
+          0 -2px 0 #000,
+          -2px 0 0 #000,
+          2px 2px 5px #000;
+  
+
 }

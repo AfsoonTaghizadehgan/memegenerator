@@ -73,20 +73,20 @@ width: 100%;
   width: 100%;
 }
 
-.top{
+.img--top{
   margin-bottom: -50px;
   text-align: center;
   z-index: 1;
 }
 
-.bottom{
+.img--bottom{
   margin-top: -90px;
   text-align: center;
   z-index: 1;
   color: #D5D4D8;
 }
 
-.img--text{
+.text{
     color: white;
     font-size: 2em;
     font-family: Impact, sans-serif;

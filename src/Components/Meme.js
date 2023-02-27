@@ -11,6 +11,7 @@ export default function Meme(){
     
     const [allMemes, setAllMemes]= React.useState([])
 
+    //function for picking a random meme from allMemes
     function memePick(){
         const memesArrayLength= allMemes.length
         const number= Math.floor(Math.random() * (memesArrayLength+1));
@@ -21,7 +22,7 @@ export default function Meme(){
         )
     }
 
-   
+   //function for setting texts on the meme, Top and Bottom
     function setText(event){
         setMemeData(prevMemeData =>{
             const {name, value}= event.target
@@ -32,12 +33,14 @@ export default function Meme(){
         })
     }
 
+    //useEffect will add all the memes from the API into the allMemes array
     React.useEffect(()=>{
         fetch("https://api.imgflip.com/get_memes")
         .then(response => response.json())
         .then(data => setAllMemes(data.data.memes))
     }, [])
 
+    
     return(
         <main className='meme'>
             <div className='meme--form'>

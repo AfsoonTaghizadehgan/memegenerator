@@ -1,5 +1,6 @@
 import '../App.css';
 import Meme from '../Images/Troll Face.png'
+import React  from 'react';
 
 export default function Header(){
     return(
